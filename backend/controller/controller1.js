@@ -15,69 +15,69 @@ const QC8= require('../models/modelQC8')
 const QC9= require('../models/modelQC9')
 
     const getQC1_1 = async(req,res)=>{
-        const data = await QC1_1.find()
+        const data = await QC1_1.find().sort({ _id: -1 }) // newest first id -1
         res.status(200).json(data)} 
 
 
 
     const getQC1_2 = async(req,res)=>{
-        const data = await QC1_2.find()
+        const data = await QC1_2.find().sort({ _id: -1 })
         res.status(200).json(data)}
     
     const getQC2_1 = async(req,res)=>{
-        const data = await QC2_1.find()
+        const data = await QC2_1.find().sort({ _id: -1 })
         res.status(200).json(data)}
 
     const getQC2_2 = async(req,res)=>{
-        const data = await QC2_2.find()
+        const data = await QC2_2.find().sort({ _id: -1 })
         res.status(200).json(data)}
     
     const getQC3_1 = async(req,res)=>{
-        const data = await QC3_1.find()
+        const data = await QC3_1.find().sort({ _id: -1 })
         res.status(200).json(data)}
 
     const getQC4_1 = async(req,res)=>{
-        const data = await QC4_1.find()
+        const data = await QC4_1.find().sort({ _id: -1 })
         res.status(200).json(data)}
 
     
     const getQC5 = async(req,res)=>{
-        const data = await QC5.find()
+        const data = await QC5.find().sort({ _id: -1 })
          res.status(200).json(data)}
 
     const getQC5_2 = async(req,res)=>{
-        const data = await QC5_2.find()
+        const data = await QC5_2.find().sort({ _id: -1 })
         res.status(200).json(data)}
 
 
     const getQC6_1 = async(req,res)=>{
-        const data = await QC6_1.find()
+        const data = await QC6_1.find().sort({ _id: -1 })
         res.status(200).json(data)}
     
     const getQC7_1 = async(req,res)=>{
-        const data = await QC7_1.find()
+        const data = await QC7_1.find().sort({ _id: -1 })
         res.status(200).json(data)}
 
 
     const getQC7_2 = async(req,res)=>{
-        const data = await QC7_2.find()
+        const data = await QC7_2.find().sort({ _id: -1 })
         res.status(200).json(data)}
 
 
     const getQC7_3 = async(req,res)=>{
-        const data = await QC7_3.find()
+        const data = await QC7_3.find().sort({ _id: -1 })
         res.status(200).json(data)}
         
     const getQC7_4 = async(req,res)=>{
-        const data = await QC7_4.find()
+        const data = await QC7_4.find().sort({ _id: -1 })
         res.status(200).json(data)}
     
     const getQC8 = async(req,res)=>{
-        const data = await QC8.find()
+        const data = await QC8.find().sort({ _id: -1 })
         res.status(200).json(data)}
 
     const getQC9 = async(req,res)=>{
-        const data = await QC9.find()
+        const data = await QC9.find().sort({ _id: -1 })
         res.status(200).json(data)}    
 
         

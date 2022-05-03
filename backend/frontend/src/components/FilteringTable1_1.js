@@ -1,7 +1,7 @@
 
 import axios from 'axios'
 import React, { useEffect,useMemo,useState } from 'react'
- 
+import TabletoExcel from 'react-html-table-to-excel'
 import {useTable,useSortBy,useGlobalFilter} from 'react-table'
 import { COLUMNS1_1,COLUMNS1_2,} from './columns'
 import { GlobalFilter } from './GlobalFilter'
@@ -96,7 +96,13 @@ const {globalFilter}=state
       <>
       
       <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
-    <table{...getTableProps()}>
+      <TabletoExcel
+      className = 'button1 btn-primary'
+    table="QCdata"
+    filename={global.Name}
+    sheet={global.Name}
+    buttonText="Export To Excel"/>
+    <table{...getTableProps()} id="QCdata">
         <thead>
             {headerGroups.map((headerGroup)=> (
                     <tr{...headerGroup.getHeaderGroupProps()}>
@@ -132,5 +138,6 @@ const {globalFilter}=state
 
         </tbody>
     </table>
+    
     </>)
 }

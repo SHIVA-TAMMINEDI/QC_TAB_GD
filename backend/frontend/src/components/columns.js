@@ -24,6 +24,7 @@ export const COLUMNS1_1=[
     {
         Header:'Date & Time',
         accessor:'End_Time',
+        
         //Cell: ({value})=> {return format(new Date(value),'dd/MM/yyyy hh:mm:ss a')}
     },
     {
