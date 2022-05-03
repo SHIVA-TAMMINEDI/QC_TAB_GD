@@ -1,0 +1,22 @@
+const express = require('express')
+const router = express.Router()
+const {getQC1_1,getQC1_2,getQC2_1,getQC2_2,getQC3_1,getQC4_1,getQC5,getQC5_2,getQC6_1,getQC7_1,getQC7_2,getQC7_3,getQC7_4,getQC8,getQC9} = require('../controller/controller1')
+router.route('/QC1_1').get(getQC1_1)
+router.route('/QC1_2').get(getQC1_2)
+router.route('/QC2_1').get(getQC2_1)
+router.route('/QC2_2').get(getQC2_2)
+router.route('/QC3_1').get(getQC3_1)
+router.route('/QC4_1').get(getQC4_1)
+router.route('/QC5_1').get(getQC5)
+router.route('/QC5_2').get(getQC5_2)
+router.route('/QC6_1').get(getQC6_1)
+router.route('/QC7_1').get(getQC7_1)
+router.route('/QC7_2').get(getQC7_2)
+router.route('/QC7_3').get(getQC7_3)
+router.route('/QC7_4').get(getQC7_4)
+router.route('/QC8_1').get(getQC8)
+router.route('/QC9_1').get(getQC9)
+
+
+//router.route('/test1').get(getGoal)
+module.exports = router
